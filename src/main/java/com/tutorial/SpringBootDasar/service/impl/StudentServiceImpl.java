@@ -33,7 +33,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Student update(Student student) {
-        getById(student.getId());
+//        getById(student.getId());
         return studentRepository.saveAndFlush(student);
     }
 
